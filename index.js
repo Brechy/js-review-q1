@@ -29,11 +29,15 @@ function subtract(num1,num2){
 function calculateSum(array){
   //WRITE YOUR CODE HERE
 }
+//calculateSum([1,2,3])    => 6
+//calculateSum([-1,-2,-3]) => -6
 
 //don't look up the answer!
-function forEach(){
+function map(){
 
 }
+//map([1,2,3],3)  => [3,6,9]
+//map([2,3,4],-2) => [-4,-6,-8]
 
 function filter(){
 
@@ -80,6 +84,11 @@ function countVowels(){
 }
 //countVowels('apple')  => 2
 //countVowels('tomato') => 3
+
+// BONUS //
+function forEach(){
+
+}
 
 module.exports = {
   add:add,
