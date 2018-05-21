@@ -20,7 +20,12 @@ function subtract(num1,num2){
   return num1-num2;
 }
 
-//ANNOTATE HERE
+/**
+ * @name: calculateSum
+ * @description returns a sum of an array
+ * @param1: array
+ * @return: number
+ **/
 function calculateSum(array){
   //WRITE YOUR CODE HERE
 }

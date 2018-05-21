@@ -36,6 +36,12 @@ describe('all tests for your functions',()=>{
     });
   })
 
-  //
+  //CALCULATE SUM
+  describe('calculate sum tests', ()=>
+    it('should output the sum of an array', ()=>{
+      assert.equal(sumFunc([1,2,3], 6))
+      assert.equal(sumFunc([-1,-2,-3])-6);
+    })
+);
 
 })
