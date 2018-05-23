@@ -4,9 +4,9 @@
  * @param1: num1
  * @param2: num2
  * @return: number
- **/
-function add(num1,num2){
-  return num1+num2;
+ * */
+function add(num1, num2) {
+  return num1 + num2;
 }
 
 /**
@@ -15,9 +15,9 @@ function add(num1,num2){
  * @param1: num1
  * @param2: num2
  * @return: number
- **/
-function subtract(num1,num2){
-  return num1-num2;
+ * */
+function subtract(num1,num2) {
+  return num1 - num2;
 }
 
 /**
@@ -25,73 +25,77 @@ function subtract(num1,num2){
  * @description returns a sum of an array
  * @param1: array
  * @return: number
- **/
-function calculateSum(array){
-  //WRITE YOUR CODE HERE
+ * */
+function calculateSum(array) {
+let sum = 0;
+  for(i=0; i < array.length; i++) {
+    sum += array[i];
+  }
+  return sum;
 }
-//calculateSum([1,2,3])    => 6
-//calculateSum([-1,-2,-3]) => -6
+// calculateSum([1,2,3])    => 6
+// calculateSum([-1,-2,-3]) => -6
 
-//don't look up the answer!
-function map(){
+// don't look up the answer!
+function map() {
 
 }
-//map([1,2,3],3)  => [3,6,9]
-//map([2,3,4],-2) => [-4,-6,-8]
+// map([1,2,3],3)  => [3,6,9]
+// map([2,3,4],-2) => [-4,-6,-8]
 
 function filter(){
 
 }
 
-function reverseLettersInPlace(){
+function reverseLettersInPlace() {
 
 }
-//reverseLettersInPlace("Hi justin") => "iH nitsuj"
-//reverseLettersInPlace(" A simple challenge! ") => => " A elpmis !egnellahc "
+// reverseLettersInPlace("Hi justin") => "iH nitsuj"
+// reverseLettersInPlace(" A simple challenge! ") => => " A elpmis !egnellahc "
 
-function allSimpleCombinations(){
-
-}
-//allSimpleCombinations('cat')  => ['c','ca','cat','a','at','t']
-//allSimpleCombinations('talk') => ['t','ta','tal','talk','a','al','alk','l','lk','k'];
-
-function alphabeticalOrder(){
+function allSimpleCombinations() {
 
 }
-//alphabeticalOrder('talk') => 'aklt'
-//alphabeticalOrder('sailormoon')  => 'ailmnooors'
+// allSimpleCombinations('cat')  => ['c','ca','cat','a','at','t']
+// allSimpleCombinations('talk') => ['t','ta','tal','talk','a','al','alk','l','lk','k'];
 
-function returnLongestWord(){
-
-}
-//returnLongestWord('short sentence alphabetical') => 'alphabetical'
-//returnLongestWord('cute pretty beautiful pulchritudinous') => 'pulchritudinous'
-
-function isPrime(){
+function alphabeticalOrder() {
 
 }
-//isPrime(7)  => true
-//isPrime(12) => false
+// alphabeticalOrder('talk') => 'aklt'
+// alphabeticalOrder('sailormoon')  => 'ailmnooors'
 
-function returnCoinBreakdown(){
-
-}
-//returnCoinBreakdown(46) => {25:1,10:1,5:2,1:1}
-//returnCoinBreakdown(19) => {25:0,10:1,5:1,1:4}
-
-function countVowels(){
+function returnLongestWord() {
 
 }
-//countVowels('apple')  => 2
-//countVowels('tomato') => 3
+// returnLongestWord('short sentence alphabetical') => 'alphabetical'
+// returnLongestWord('cute pretty beautiful pulchritudinous') => 'pulchritudinous'
+
+function isPrime() {
+
+}
+// isPrime(7)  => true
+// isPrime(12) => false
+
+function returnCoinBreakdown() {
+
+}
+// returnCoinBreakdown(46) => {25:1,10:1,5:2,1:1}
+// returnCoinBreakdown(19) => {25:0,10:1,5:1,1:4}
+
+function countVowels() {
+
+}
+// countVowels('apple')  => 2
+// countVowels('tomato') => 3
 
 // BONUS //
-function forEach(){
+function forEach() {
 
 }
 
 module.exports = {
-  add:add,
-  subtract:subtract,
-  //add your functions here
-}
+  add: add,
+  subtract: subtract,
+  calculateSum: calculateSum,
+};

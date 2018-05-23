@@ -37,11 +37,15 @@ describe('all tests for your functions',()=>{
   })
 
   //CALCULATE SUM
-  describe('calculate sum tests', ()=>
+  describe('sum array', ()=>{
+  const calculateSumFunc = allFunctions.calculateSum;
     it('should output the sum of an array', ()=>{
-      assert.equal(sumFunc([1,2,3], 6))
-      assert.equal(sumFunc([-1,-2,-3])-6);
+      assert.equal(calculateSumFunc([1,2,3]), 6);
+      assert.equal(calculateSumFunc([-1,-2,-3]), -6);
     })
-);
+    it('should output a number', ()=>{
+      assert.isNumber(calculateSumFunc([3,6,9]));
+    })
+ });
 
 })
