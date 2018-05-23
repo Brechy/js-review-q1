@@ -16,7 +16,7 @@ function add(num1, num2) {
  * @param2: num2
  * @return: number
  * */
-function subtract(num1,num2) {
+function subtract(num1, num2) {
   return num1 - num2;
 }
 
@@ -27,8 +27,8 @@ function subtract(num1,num2) {
  * @return: number
  * */
 function calculateSum(array) {
-let sum = 0;
-  for(i=0; i < array.length; i++) {
+  let sum = 0;
+  for (i = 0; i < array.length; i++) {
     sum += array[i];
   }
   return sum;
@@ -36,65 +36,45 @@ let sum = 0;
 // calculateSum([1,2,3])    => 6
 // calculateSum([-1,-2,-3]) => -6
 
-function map() {
-
-}
+function map() {}
 // map([1,2,3],3)  => [3,6,9]
 // map([2,3,4],-2) => [-4,-6,-8]
 
-function filter(){
+function filter() {}
 
-}
-
-function reverseLettersInPlace() {
-
-}
+function reverseLettersInPlace() {}
 // reverseLettersInPlace("Hi justin") => "iH nitsuj"
 // reverseLettersInPlace(" A simple challenge! ") => => " A elpmis !egnellahc "
 
-function allSimpleCombinations() {
-
-}
+function allSimpleCombinations() {}
 // allSimpleCombinations('cat')  => ['c','ca','cat','a','at','t']
 // allSimpleCombinations('talk') => ['t','ta','tal','talk','a','al','alk','l','lk','k'];
 
-function alphabeticalOrder() {
-
-}
+function alphabeticalOrder() {}
 // alphabeticalOrder('talk') => 'aklt'
 // alphabeticalOrder('sailormoon')  => 'ailmnooors'
 
-function returnLongestWord() {
-
-}
+function returnLongestWord() {}
 // returnLongestWord('short sentence alphabetical') => 'alphabetical'
 // returnLongestWord('cute pretty beautiful pulchritudinous') => 'pulchritudinous'
 
-function isPrime() {
-
-}
+function isPrime() {}
 // isPrime(7)  => true
 // isPrime(12) => false
 
-function returnCoinBreakdown() {
-
-}
+function returnCoinBreakdown() {}
 // returnCoinBreakdown(46) => {25:1,10:1,5:2,1:1}
 // returnCoinBreakdown(19) => {25:0,10:1,5:1,1:4}
 
-function countVowels() {
-
-}
+function countVowels() {}
 // countVowels('apple')  => 2
 // countVowels('tomato') => 3
 
 // BONUS //
-function forEach() {
-
-}
+function forEach() {}
 
 module.exports = {
-  add: add,
-  subtract: subtract,
-  calculateSum: calculateSum,
+  add,
+  subtract,
+  calculateSum
 };
