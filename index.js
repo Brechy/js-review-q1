@@ -36,7 +36,6 @@ let sum = 0;
 // calculateSum([1,2,3])    => 6
 // calculateSum([-1,-2,-3]) => -6
 
-// don't look up the answer!
 function map() {
 
 }
