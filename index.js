@@ -28,15 +28,27 @@ function subtract(num1, num2) {
  * */
 function calculateSum(array) {
   let sum = 0;
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     sum += array[i];
   }
   return sum;
 }
-// calculateSum([1,2,3])    => 6
-// calculateSum([-1,-2,-3]) => -6
 
-function map() {}
+/**
+ * @name: mapFunc
+ * @description returns altered array
+ * @param1: array
+ * @return: array
+ * */
+function map(arr, func) {
+  const newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(func(arr[i]));
+    return newArr;
+  }
+
+  return newArr;
+}
 // map([1,2,3],3)  => [3,6,9]
 // map([2,3,4],-2) => [-4,-6,-8]
 
@@ -76,5 +88,6 @@ function forEach() {}
 module.exports = {
   add,
   subtract,
-  calculateSum
+  calculateSum,
+  map,
 };

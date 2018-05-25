@@ -1,4 +1,4 @@
-const assert = require('chai').assert;
+const { assert } = require('chai');
 const allFunctions = require('../index');
 
 describe('all tests for your functions', () => {
@@ -47,5 +47,20 @@ describe('all tests for your functions', () => {
     });
   });
 
-  //
+  // MAP function
+  // Should muliply each element in an array by num
+  describe('map array', () => {
+    const mapFunc = allFunctions.map;
+    it('should multiply each element in the array by value passed in', () => {
+      assert.isArray(mapFunc([1, 2, 3], n => n * 3));
+    });
+    it('should multiply by negative values passed in', () => {
+      assert.isArray(mapFunc([2, 3, 4], n => n * -2));
+    });
+    it('should output a number', () => {
+      assert.isArray(mapFunc([6, 8, 9]));
+    });
+  });
+// should multiply positive && negative numbers
+// should output an integer (number)
 });
