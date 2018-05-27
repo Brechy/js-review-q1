@@ -6,7 +6,7 @@
  * @return: number
  * */
 function add(num1, num2) {
-  return num1 + num2;
+	return num1 + num2;
 }
 
 /**
@@ -17,7 +17,7 @@ function add(num1, num2) {
  * @return: number
  * */
 function subtract(num1, num2) {
-  return num1 - num2;
+	return num1 - num2;
 }
 
 /**
@@ -27,11 +27,11 @@ function subtract(num1, num2) {
  * @return: number
  * */
 function calculateSum(array) {
-  let sum = 0;
-  for (let i = 0; i < array.length; i++) {
-    sum += array[i];
-  }
-  return sum;
+	let sum = 0;
+	for (let i = 0; i < array.length; i++) {
+		sum += array[i];
+	}
+	return sum;
 }
 
 /**
@@ -41,13 +41,13 @@ function calculateSum(array) {
  * @return: array
  * */
 function map(arr, func) {
-  const newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    newArr.push(func(arr[i]));
-    return newArr;
-  }
+	const newArr = [];
+	for (let i = 0; i < arr.length; i++) {
+		newArr.push(func(arr[i]));
+		return newArr;
+	}
 
-  return newArr;
+	return newArr;
 }
 // map([1,2,3],3)  => [3,6,9]
 // map([2,3,4],-2) => [-4,-6,-8]
@@ -86,8 +86,8 @@ function countVowels() {}
 function forEach() {}
 
 module.exports = {
-  add,
-  subtract,
-  calculateSum,
-  map,
+	add,
+	subtract,
+	calculateSum,
+	map
 };
