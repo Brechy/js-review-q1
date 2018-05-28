@@ -36,7 +36,7 @@ function calculateSum(array) {
 
 /**
  * @name: mapFunc
- * @description returns altered array
+ * @description returns mapped/altered array
  * @param1: array
  * @return: array
  * */
@@ -46,14 +46,23 @@ function map(arr, func) {
 		newArr.push(func(arr[i]));
 		return newArr;
 	}
-
 	return newArr;
 }
-// map([1,2,3],3)  => [3,6,9]
-// map([2,3,4],-2) => [-4,-6,-8]
 
-function filter(arr, func) {
-// write  code here
+/**
+ * @name: filterFunc
+ * @description returns filtered array
+ * @param1: array
+ * @return: array
+ * */
+function filter(array, func) {
+	const filteredArr = [];
+	array.forEach((element) => {
+		if (func(element)) {
+			filteredArr.push(element);
+		}
+	});
+	return filteredArr;
 }
 
 function reverseLettersInPlace() {}
