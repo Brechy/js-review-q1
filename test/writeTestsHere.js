@@ -64,9 +64,9 @@ describe('all tests for your functions', () => {
 	// FILTER function
 	describe('filter array tests', () => {
 		const filterFunc = allFunctions.filter;
-
+		const isEven = num => num % 2 === 0;
 		it('should return only even numbers', () => {
-			assert.deepEqual(filterFunc([1,2,3,4,5,6], num => num % 2 === 0 === true, [2, 4, 6]));
+			assert.deepEqual(filterFunc([1, 2, 3, 4, 5, 6], isEven, [2, 4, 6]));
 		});
 	});
 });
