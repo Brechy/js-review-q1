@@ -57,16 +57,21 @@ describe('all tests for your functions', () => {
 		it('should multiply by negative values passed in', () => {
 			assert.isArray(mapFunc([2, 3, 4], n => n * -2));
 		});
-		it('should output a number', () => {
-			assert.isNumber(mapFunc([6, 8, 9]));
-		});
+		// it('should output a number', () => {
+		// 	assert.isNumber(mapFunc([6, 8, 9]));
+		// });
 	});
 	// FILTER function
 	describe('filter array tests', () => {
 		const filterFunc = allFunctions.filter;
 		const isEven = num => num % 2 === 0;
+		const isOdd = num => num % 2 !== 0;
+
 		it('should return only even numbers', () => {
 			assert.deepEqual(filterFunc([1, 2, 3, 4, 5, 6], isEven, [2, 4, 6]));
+		});
+		it('should return only odd numbers', () => {
+			assert.deepEqual(filterFunc([1, 2, 3, 4, 5, 6], isOdd, [1, 3, 5]));
 		});
 	});
 });
