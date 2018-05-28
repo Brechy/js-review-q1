@@ -52,8 +52,8 @@ function map(arr, func) {
 // map([1,2,3],3)  => [3,6,9]
 // map([2,3,4],-2) => [-4,-6,-8]
 
-function filter() {
-
+function filter(arr, func) {
+// write  code here
 }
 
 function reverseLettersInPlace() {}
@@ -91,5 +91,6 @@ module.exports = {
 	add,
 	subtract,
 	calculateSum,
-	map
+	map,
+	filter
 };
