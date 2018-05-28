@@ -92,5 +92,5 @@ module.exports = {
 	subtract,
 	calculateSum,
 	map,
-	filter
+	filter,
 };
