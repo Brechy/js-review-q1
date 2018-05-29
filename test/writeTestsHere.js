@@ -82,4 +82,14 @@ describe('all tests for your functions', () => {
 			assert.deepEqual(filterFunc([2, -3, 4, -5, 6], isPos), [2, 4, 6]);
 		});
 	});
+	// REVERSE function
+	describe('reverse letters in place tests', () => {
+		const reverseFunc = allFunctions.reverseLettersInPlace;
+		it('should return a string', () => {
+			assert.isString(reverseFunc(''), 'I am a string');
+		});
+		it('should return a string with all letters reversed in place', () => {
+			assert.deepEqual(reverseFunc('Hi jamo'), 'iH omaj');
+		});
+	});
 });
