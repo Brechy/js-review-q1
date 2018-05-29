@@ -65,7 +65,13 @@ function filter(array, func) {
 	return filteredArr;
 }
 
-function reverseLettersInPlace() {}
+function reverseLettersInPlace(str) {
+	const splitSpaces = str.split(' ');
+	const splitString = splitSpaces.split('');
+	const reverseArr = splitString.reverse();
+	const joinArr = reverseArr.join('');
+	return joinArr;
+}
 // reverseLettersInPlace("Hi justin") => "iH nitsuj"
 // reverseLettersInPlace(" A simple challenge! ") => => " A elpmis !egnellahc "
 

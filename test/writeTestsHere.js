@@ -89,7 +89,7 @@ describe('all tests for your functions', () => {
 			assert.isString(reverseFunc(''), 'I am a string');
 		});
 		it('should return a string with all letters reversed in place', () => {
-			assert.deepEqual(reverseFunc('Hi jamo'), 'iH omaj');
+			assert.deepEqual(reverseFunc('Hi Jamo'), 'iH omaJ');
 		});
 	});
 });
