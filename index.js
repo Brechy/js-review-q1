@@ -102,4 +102,5 @@ module.exports = {
 	calculateSum,
 	map,
 	filter,
+	reverseLettersInPlace,
 };
